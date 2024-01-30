@@ -2,6 +2,10 @@ import streamlit as sl
 import time as t
 from datetime import time
 
+sl.set_page_config(
+    page_title="Timer App",
+    page_icon="⌚"
+)
 
 def time_converter(value):
     m, s, ms = value.split(":")
